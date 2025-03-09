@@ -18,7 +18,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'lunar new year',
+        'topic': 'opportunity and limitation to apply Agentic AI for enterprise',
         'current_year': str(datetime.now().year)
     }
     
@@ -56,7 +56,7 @@ def test():
     Test the crew execution and returns the results.
     """
     inputs = {
-        "topic": "AI LLMs"
+        "topic": "Multi-agent pattern in Agentic AI"
     }
     try:
         AssistantForChloe().crew().test(n_iterations=int(sys.argv[1]), openai_model_name=sys.argv[2], inputs=inputs)

@@ -16,3 +16,13 @@ reporting_task:
     Formatted as markdown without '```'
   agent: reporting_analyst
   output_file: report.md
+
+email_summarizer_task:
+    description: >
+      Summarize the email into a 3 bullet point summary
+    expected_output: >
+      A 3 bullet point summary of the email
+    agent: email_summarizer
+    context:
+      - reporting_task
+      - research_task
